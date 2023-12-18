@@ -37,7 +37,7 @@
             
             <div class="w-full flex justify-between items-center text-white mt-4 ">
                 <p class="ml-4 mr-4">CONTACTO: </p>
-                <p class="ml-4 mr-8">© 2023 BH Trademarket. All Rights Reserved.</p>
+                <p class="ml-4 mr-8">© 2023 Promo life. All Rights Reserved.</p>
             </div>
             
         </div>
