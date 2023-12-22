@@ -327,8 +327,8 @@ class CotizadorController extends Controller
             $price_tecnica = $item->price_technique;
             $dataProduct['prices_techniques'] = $price_tecnica;
             $dataProduct['cantidad'] = $item->cantidad;
-            $dataProduct['costo_unitario'] = $item->costo_unitario;
-            $dataProduct['costo_total'] = $item->costo_total;
+            $dataProduct['precio_unitario'] = $item->precio_unitario;
+            $dataProduct['precio_total'] = $item->precio_total;
             $dataProduct['quote_by_scales'] = false;
             $dataProduct['scales_info'] = null;
             array_push($quote['quoteProducts'], $dataProduct);
@@ -358,9 +358,9 @@ class CotizadorController extends Controller
         foreach ($currentSale->currentQuoteDetails as $currentQuote) {
             $data["supplier_part_id"] = $currentQuote->product->internal_sku;
             $data["description"] = $currentQuote->product->description;
-            $data["unit_cost"] = (float) $currentQuote->costo_unitario;
+            $data["unit_cost"] = (float) $currentQuote->precio_unitario;
             $data["unit_cost_with_iva"] = round($data["unit_cost"] * 1.16, 2);
-            $data["unit_price"] = round(($currentQuote->costo_unitario / ((100 - config("settings.utility_aditional")) / 100)));
+            $data["unit_price"] = round(($currentQuote->precio_unitario / ((100 - config("settings.utility_aditional")) / 100)));
             $data["unit_price_with_iva"] = round($data["unit_price"] * 1.16, 2);
             $data["quantity"] = $currentQuote->cantidad;
             $data["quantity"] = $currentQuote->cantidad;

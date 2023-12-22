@@ -7,7 +7,7 @@
         style="object-fit: contain;"
         class="max-w-full max-full md:max-w-full" >
 
-        <div class="container flex justify-center items-center">
+    <div class="flex justify-center items-center">
     <div class="w-96">
         <div class="max-w-full p-3 rounded overflow-hidden shadow-2xl">
             <div class="separator mt-8"></div>
